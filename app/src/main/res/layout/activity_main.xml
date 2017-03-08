@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.le.phoneparam.MainActivity">
+
+    <TextView
+        android:id="@+id/devices"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/device_type"
+        app:layout_constraintTop_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/app_version"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_versions"
+        app:layout_constraintTop_toBottomOf="@+id/devices"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/devices" />
+
+    <TextView
+        android:id="@+id/phone_version"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_versions"
+        app:layout_constraintTop_toBottomOf="@+id/app_version"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/devices"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/devices" />
+
+    <TextView
+        android:id="@+id/sdk_version"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sdk_versions"
+        app:layout_constraintTop_toBottomOf="@+id/phone_version"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/phone_version" />
+
+    <TextView
+        android:id="@+id/cpu_type"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cpu_type"
+        app:layout_constraintTop_toBottomOf="@+id/sdk_version"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/sdk_version" />
+
+    <TextView
+        android:id="@+id/cpu_kernel"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cpu_kernel"
+        app:layout_constraintTop_toBottomOf="@+id/cpu_type"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/cpu_type" />
+
+    <TextView
+        android:id="@+id/cpu_frequency"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cpu_frequency"
+        app:layout_constraintTop_toBottomOf="@+id/cpu_kernel"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/cpu_kernel"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/cpu_kernel" />
+
+    <TextView
+        android:id="@+id/avc_level"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/avc_level"
+        app:layout_constraintTop_toBottomOf="@+id/cpu_frequency"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/cpu_frequency" />
+
+    <TextView
+        android:id="@+id/decode_profile"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decode_profile"
+        app:layout_constraintTop_toBottomOf="@+id/avc_level"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/avc_level" />
+
+    <TextView
+        android:id="@+id/device_id"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_id"
+        app:layout_constraintTop_toBottomOf="@+id/decode_profile"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/decode_profile" />
+
+    <Button
+        android:id="@+id/print_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打印Log"
+        app:layout_constraintTop_toBottomOf="@+id/device_id"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/device_id" />
+
+
+</android.support.constraint.ConstraintLayout>

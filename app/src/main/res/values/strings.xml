@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">查看手机参数</string>
+    <string name="device_type">设备类型：</string>
+    <string name="app_versions">应用版本：6.13</string>
+    <string name="phone_versions">系统版本：</string>
+    <string name="sdk_versions">SDK版本：</string>
+    <string name="cpu_type">CPU Type：</string>
+    <string name="cpu_kernel">CPU核数：</string>
+    <string name="cpu_frequency">CPU主频：</string>
+    <string name="avc_level">AVCLevel：</string>
+    <string name="decode_profile">DecodeProfile：</string>
+    <string name="phone_id">设备ID：</string>
+</resources>
